@@ -7,6 +7,110 @@
 </head>
 
 <body>
+	 body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fc;
+      margin: 0;
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2d3436;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 25px 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #0984e3;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #74b9ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Dog Adoption Application Form</h2>
+
+  <form action="#" method="POST">
+    <label for="fullName">Full Name *</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number *</label>
+    <input type="text" id="phone" name="phone" required>
+
+    <label for="age">Your Age *</label>
+    <input type="number" id="age" name="age" min="18" required>
+
+    <label>Have you owned a dog before? *</label>
+    <input type="radio" id="ownedYes" name="ownedBefore" value="Yes" required>
+    <label for="ownedYes" style="display:inline;">Yes</label>
+    <input type="radio" id="ownedNo" name="ownedBefore" value="No" required>
+    <label for="ownedNo" style="display:inline;">No</label>
+
+    <label for="dogBreed">Preferred Dog Breed</label>
+    <select id="dogBreed" name="dogBreed">
+      <option value="any">Any</option>
+      <option value="labrador">Labrador Retriever</option>
+      <option value="beagle">Beagle</option>
+      <option value="german">German Shepherd</option>
+      <option value="pug">Pug</option>
+      <option value="indie">Indian Pariah</option>
+    </select>
+	    <button type="submit">Submit Application</button>
+  </form>
+
+</body>
+</html>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>

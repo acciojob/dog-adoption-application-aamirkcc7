@@ -6,8 +6,14 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-	 body {
+<body
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dog Adoption Form</title>
+  <style>
+    body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f7f9fc;
       margin: 0;
@@ -106,12 +112,29 @@
       <option value="pug">Pug</option>
       <option value="indie">Indian Pariah</option>
     </select>
-	    <button type="submit">Submit Application</button>
+
+    <label for="houseType">Type of Home *</label>
+    <select id="houseType" name="houseType" required>
+      <option value="">-- Select --</option>
+      <option value="apartment">Apartment</option>
+      <option value="house_with_yard">House with Yard</option>
+      <option value="farmhouse">Farmhouse</option>
+    </select>
+
+    <label>
+      <input type="checkbox" name="agreeTerms" required>
+      I agree to provide proper care, food, and shelter to the dog.
+    </label>
+
+    <label for="message">Why do you want to adopt a dog?</label>
+    <textarea id="message" name="message" rows="4" placeholder="Tell us why you're interested in adopting..."></textarea>
+
+    <button type="submit">Submit Application</button>
   </form>
 
 </body>
 </html>
-	<!-- the entire body must be written by student -->
+
     <script type="text/javascript" src="./script.js">
 </script>
 

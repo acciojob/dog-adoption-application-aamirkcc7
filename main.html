@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dog Adoption Application Form</title>
-</head>
-<body>
-  <h2>Dog Adoption Application Form</h2>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Adoption Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f8;
+      padding: 20px;
+    }
 
-  <form method="POST">
-    <!-- Name -->
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="Name"><br><br>
+    form {
+      background: #fff;
+      padding: 25px 40px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-    <!-- Phone Number -->
-    <label for="phone">Phone Number:</label>
-    <input type="text" id="phone" name="phone" placeholder="Phone Number"><br><br>
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
 
-    <!-- Address -->
-    <label for="address">Address:</label>
-    <input type="text" id="address" name="address" placeholder="Address"><br><br>
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #555;
+    }
 
-    <!-- Checkbox: Lived with a dog before -->
-    <input type="checkbox" id="checkbox" name="lived_with_dog" value="Have you ever lived with a Dog before?">
-    <label for="checkbox">Have you ever lived with a Dog before?</label>
-    <br><br>
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
 
-    <!-- Multi-Select: Preferred Breeds -->
-    <label for="multiSelect">Please select your preferred breeds:</label><br>
-    <select id="multiSelect" name="preferred_breeds" multiple>
-      <option value="Labrador">Labrador</option>
-      <option value="German Shepherd">German Shepherd</option>
-      <option value="Golden Retriev"> </option><br>
-	<button type="submit">Submit</button>
-	
-  </form>
- <button type="submit">Submit</button>
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    select[multiple] {
+      height: 100px;
+    }
+
+    button[type="submit"] {
+      margin-top: 20px;
+      width
